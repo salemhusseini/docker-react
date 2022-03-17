@@ -8,6 +8,6 @@ RUN npm run build
 
 
 # Build nginx image
-FROM nginx:latest
+FROM nginx
 EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
